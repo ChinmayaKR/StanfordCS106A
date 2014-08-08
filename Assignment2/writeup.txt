@@ -1,0 +1,59 @@
+
+Please answer the write-up questions from the Welcome to Java 
+write-up in this text file. You can then submit this file along 
+with your code when using the submitter.
+
+These questions will be graded on a "did you answer the
+questions?" basis and your section leader may discuss
+them with you during your IG for this assignment.
+
+1. In the FindRange program, we suggested that you make
+   it easy to change the value of the sentinel that the
+   user should enter to signal that they have no more data
+   to enter. What changes would you have to make to the
+   program to make the sentinel have some other value, say,
+   -1 or 137?
+   
+A: In order to change the value of the sentinel, the value of SENTINEL before 
+   "run()" method needs to be changed to the required value [Eg: -1, 137 etc.].      
+   
+   
+   
+2. The FixingBrokenJava program that we gave you contained
+   many bugs, some of which are more obvious than others.
+   What was your approach to finding those bugs? How did
+   you test your updated FixingBrokenJava program to
+   ensure that you had gotten rid of all of the bugs?
+   
+A: The syntax errors can be solved with the help of eclipse, as it
+   points out the errors at the bottom in the "Problems" tab along with 
+   the lines where the errors are present. To verify that all syntax errors
+   were removed, I ran the program once. And it ran to prove that there were
+   no syntax errors. In order to find the logical errors, I entered the debug 
+   mode, and put a BreakPoint on the lines where I wanted to see what was 
+   happening, and once I found out what was going on, I thought about what 
+   was supposed to be going on, and I corrected logical mistakes to get the 
+   required answers. 
+   
+   
+   
+3. In the Pyramid program, we've provided you some
+   constants that you can change to adjust the brick
+   size and pyramid size. The program should work for
+   any values of those constants, provided that the
+   brick size and pyramid heights aren't negative.
+   When testing your program, did you try changing the
+   values of those constants to see if the program
+   would work correctly? If so, what different values
+   did you try setting those constants to?
+   
+A: I tried the program with BRICKS_IN_BASE being in the range of 10 to 20
+   because after that the pyramid would go out of the console. And when I 
+   wanted to put more bricks in base I just decreased the size of the bricks
+   accordingly. I set the BRICK_HEIGHT in the range of 10 to 30, and the 
+   BRICK_WIDTH in the range of 10 to 40, when I kept the BRICKS_IN_BASE constant.  
+
+
+
+
+
