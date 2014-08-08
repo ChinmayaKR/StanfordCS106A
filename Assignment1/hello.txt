@@ -1,0 +1,43 @@
+We'd love to get to know you in CS106A! As your first task, we'd like you to
+update this document with the answers to the questions below and leave them in
+your submission so that your section leader learn more about you (you probably
+will not know who they are until after the assignment is due).
+
+Also, send an email to Tom (hurlbutt@cs.stanford.edu), Yves
+(yves@cs.stanford.edu), and Karl (knuhlig@stanford.edu) with the answers to
+these questions. Please make sure that the subject line of your email says
+"CS106A Email: <your name>", where "<your name>" is actually filled in with your
+name.
+
+General information and computing background:
+	0.	What is your name?
+	A:	My name is Chinmaya Ramachandra Kuduvalli
+	
+	1.	What year are you? (Fresh, Sophomore, Junior, Senior, Graduate, Other)
+	A:	I just completed my freshman year.
+		
+  	2.  	Are you a Stanford student, and if not where are you from?
+	A:	I am doing my undergrad at R.V. College of Engineering in Bangalore, India.
+	
+	3.	What is your major/area of study (or, if you're in high school, what would you like to study)? ("I'm not sure" and "I don't 			know" are completely acceptable answers here!)
+	A:	I am pursuing a Major in Mechanical Engineering.
+	
+	4.	What type of computer (PC, Mac, Linux, etc.) do you prefer using?
+	A:	I prefer using Linux.
+	
+	5.	Why are you taking CS106A?
+	A:	I want to learn Object-Oriented Programming and develop a good style of coding.
+
+Fun Stuff: This final section is just for us to have something to remember you by.
+
+	1.	What do you do for fun?
+	A:	Photography is one of my favorite hobbies, along with bird watching, basketball, and gaming. 
+
+	2.	Tell a quick anecdote about something that you feel makes you unique. This can be a cool talent, an interesting experience, 			or anything else you'd like!
+	A:	I love animals, and I think animals like me too. I have seen several instances where they are comfortable around me,
+   		but I think my best experience was when I had been to California Academy of Sciences, and a butterfly had sat on my 
+		shoulder without me luring it to sit, and it stayed with me the entire time I was in the Rainforest globe. 
+	
+	3.	Computers can be used to solve a wide variety of problems and perform a huge range of tasks. Is there any particular 			application of computers you'd like us to cover in this course?
+	A:	I would like to learn the application of computers where they're used to solve real-world, real-time problems.
+

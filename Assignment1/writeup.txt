@@ -1,0 +1,62 @@
+Please answer the writeup questions from the Karel
+Writeup in this text file. You can then submit this 
+file along with your code when using the submitter.
+
+These questions will be graded on a "did you answer the
+questions?" basis and your section leader may discuss
+them with you during your IG for this assignment.
+
+1. The Karel programs you wrote in the last three
+   parts of this assignment need to work in a variety
+   of worlds. How did you test your code to see if it
+   would work correctly in multiple different worlds?
+
+A: I wrote the program keeping in mind the different possible conditions that can arise in different worlds.
+   I tested my code with the sample programs provided, and for checkerboard Karel, I created other possible worlds
+   with different dimensions and tested the code.
+   
+
+2. There are many different approaches you can take
+   when writing your solutions to the CheckerboardKarel
+   and MidpointFindingKarel problems. When you were
+   working on these problems, did you consider any
+   solution strategies other than the one you chose
+   to implement? If so, what other approaches did
+   you consider?
+
+A: In MidpointFindingKarel, I saw that if I made Karel pick up the beepers from end-to-center, 
+   Karel would end up in the middle of the street. But when I thought of this, I hand't realized that
+   the trick was in the way I picked up the beepers, and proceeded to put beepers in the above fashion.
+   After discussing the problem with Karl, I got to know my mistake. And proceeded to figure out the code to 
+   make Karel pick up the beepers in that fashion, so that I would end up standing in the middle. 
+
+   For CheckerBoardKarel, I thought of making Karel come back to first avenue every time she filled a row, but
+   after discussing with Prof.Tom and creating the faceNorth() method, I found the zigzag pattern to be a better 
+   strategy to fill the board. 
+   
+   
+
+3. Choose one of the Karel problems other than
+   CollectNewspaperKarel. Describe how you decomposed
+   the program into smaller methods. How did you decide
+   how to split the code across multiple methods? Did
+   you consider any decompositions other than the one
+   you ended up choosing?
+
+A: StoneMasonKarel:
+	
+	When I saw this problem, the logic that I got was to fill the column, come back to 1st street
+   and move to the next column, and so on. I realized I needed three methods to do this -
+   One to fill the column, one to come back to the 1st street, and to move to the next column. 
+   I wrote the program such that the front of Karel is always clear, which made me loop the three methods
+   multiple number of times. But then I saw that the last column was not getting filled as it would hit a wall before that.
+   Hence I made another method which would make Karel fill the column and come back to 1st street when the front isn't clear, 
+   which would mark the end of the program. Then I realized that the method to fill the column and coming back to 1st street could 
+   become another method, and hence I made that into another method. And then I proceeded to solve the sub-problems I had
+   obtained[filling the column, coming back etc.]. I decided to make blocks of code which are used multiple number of times, and 
+   in different places into separate methods.             
+   
+
+
+
+
