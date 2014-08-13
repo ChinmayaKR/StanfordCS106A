@@ -8,13 +8,10 @@
 import acm.program.*;
 import acm.graphics.*;
 import acm.util.*;
-
 import java.awt.event.*;
-
 import javax.swing.*;
 
-public class FacePamphlet extends Program 
-implements FacePamphletConstants {
+public class FacePamphlet extends Program implements FacePamphletConstants {
 
 	private JButton addButton;
 	private JButton deleteButton;
@@ -93,6 +90,7 @@ implements FacePamphletConstants {
 		String friendName = addFriendField.getText();
 
 		if(e.getActionCommand().equals("Add")) {
+			
 			if(!profileName.equals("")) {
 				if(database.containsProfile(profileName)) {
 					canvas.displayProfile(database.getProfile(profileName));
@@ -104,6 +102,7 @@ implements FacePamphletConstants {
 				}
 			}    		
 		} else if(e.getActionCommand().equals("Delete")) {
+			
 			if(!profileName.equals("")) {
 				if(database.containsProfile(profileName)) {
 					database.deleteProfile(profileName);
@@ -115,6 +114,7 @@ implements FacePamphletConstants {
 				}
 			}
 		} else if(e.getActionCommand().equals("Lookup")) {
+			
 			if(!profileName.equals("")) {
 				if(database.containsProfile(profileName)) {
 					canvas.displayProfile(database.getProfile(profileName));
@@ -125,6 +125,7 @@ implements FacePamphletConstants {
 				}
 			}
 		} else if(e.getActionCommand().equals("Change Status") || e.getSource() == statusField) {
+			
 			if(!profileName.equals("")) {
 				if(database.containsProfile(profileName)) {
 					database.getProfile(profileName).setStatus(status);
@@ -136,6 +137,7 @@ implements FacePamphletConstants {
 				}
 			}
 		} else if(e.getActionCommand().equals("Change Picture") || e.getSource() == pictureField) {
+			
 			if(!profileName.equals("")) {
 				GImage image = null;
 				if(database.containsProfile(profileName)) {
@@ -155,16 +157,22 @@ implements FacePamphletConstants {
 				}
 			}
 		} else if(e.getActionCommand().equals("Add Friend") || e.getSource() == addFriendField) {
+			
 			if(!profileName.equals("") && !friendName.equals("")) {
-				if(database.containsProfile(profileName) && database.containsProfile(friendName)) {
-					if(!friendName.equals(profileName)) {
-						database.getProfile(profileName).addFriend(friendName);
-						database.getProfile(friendName).addFriend(profileName);
-						canvas.displayProfile(database.getProfile(profileName));
-						canvas.showMessage(friendName + " added as a friend");
+				if(database.containsProfile(profileName)) {
+					if(database.containsProfile(friendName)) {
+						if(!friendName.equals(profileName)) {
+							database.getProfile(profileName).addFriend(friendName);
+							database.getProfile(friendName).addFriend(profileName);
+							canvas.displayProfile(database.getProfile(profileName));
+							canvas.showMessage(friendName + " added as a friend");
+						} else {
+							canvas.displayProfile(null);
+							canvas.showMessage("Please add a profile other than your own");
+						}
 					} else {
 						canvas.displayProfile(null);
-						canvas.showMessage("Please add a profile other than your own");
+						canvas.showMessage("Profile of " + friendName + " does not exist");
 					}
 				} else {
 					canvas.displayProfile(null);
