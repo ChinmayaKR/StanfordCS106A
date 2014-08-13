@@ -1,0 +1,28 @@
+Please answer the following questions and submit your answers along with the
+rest of your source files.
+
+1. When discussing instance variables in lecture, we stressed that instance
+   variables should be a "weapon of last resort" when communicating data
+   around in a program. It's almost always preferable to use parameter passing
+   and return values to move data between different parts of the program. For
+   each instance variable in your program, explain why you chose to make it an
+   instance variable rather than a local variable. (Constants don't count as
+   instance variables, so you don't need to describe the constants in your
+   program.)
+  
+A: I made the ball as an instance variable as I needed to change the direction of motion, 
+   of the same instance of that ball every time, and I needed to search the collision for 
+   the same instance of the ball as well. The paddle needed to be an instance variable as
+   I needed the same instance of the paddle to track the mouse, i.e., to change its position 
+   every time the mouse position changed. The turns label had to be an instance variable as
+   I had to access it throughout the program and it was hard to pass it as a parameter. 
+ 
+   
+2. The Breakout game ends either when the user loses three balls or when all
+   the bricks are broken. How did you test whether the game would end correctly
+   in this second case? Did you make any changes to the code when testing?
+   
+A: When I wanted to check the Wining condition, I changed the constants NBRICKS_PER_ROW to two and 
+   the NBRICK_ROWS to two too. I checked other things like collision and turn counting and 
+   the paddle controls while doing this as well.
+   
