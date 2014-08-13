@@ -1,0 +1,20 @@
+Once you've finished all the coding for this assignment, we'd like you to do a
+quick write-up answering some questions about your experience with this
+assignment. Edit this file with your answers to the following questions.
+
+1. In Histogram Equalization, the frequency histogram was represented as an
+   int[], rather than an ArrayList<Integer>. Explain why it makes more sense
+   to use an int[] for the histogram than an ArrayList<Integer>.
+A: We already know the size of the histogram, hence we can represent it as an
+   array. And it is easier to do calculations on the elements of an array rather
+   an ArrayList. Hence it makes more sense to use the histogram as an int[].
+   
+   
+2. In this assignment, you worked with one-dimensional arrays (for histograms
+   and sound processing) and two-dimensional arrays (for image processing,
+   arrays of sound clips, and the Tone Matrix grid). Give an example of an
+   application where you might want to use a three-dimensional array; for
+   example, an int[][][]. (To clarify – you're not expected to use three-
+   dimensional arrays in this assignment. We'd just like you to think about
+   when you might use one).
+A: Three-dimensional arrays might be used to create 3D graphics in video-games.
