@@ -8,11 +8,9 @@
 
 
 import acm.graphics.*;
-
 import java.awt.*;
 import java.util.*;
 
-import sun.org.mozilla.javascript.tools.shell.Global;
 
 public class FacePamphletCanvas extends GCanvas 
 					implements FacePamphletConstants {
@@ -31,7 +29,7 @@ public class FacePamphletCanvas extends GCanvas
 		this.appMessage = new GLabel("");
 		this.image = null;
 	}
-
+	
 	
 	/** 
 	 * This method displays a message string near the bottom of the 
@@ -71,6 +69,7 @@ public class FacePamphletCanvas extends GCanvas
 		}
 	}
 
+	
 	/**
 	 * Displays the name of the profile currently being viewed.
 	 * 
@@ -88,6 +87,7 @@ public class FacePamphletCanvas extends GCanvas
 		add(nameLabel);
 	}
 
+	
 	/**
 	 * Displays the profile picture of the profile being viewed
 	 * under the profile name.
@@ -121,6 +121,7 @@ public class FacePamphletCanvas extends GCanvas
 		}
 	}
 
+	
 	/**
 	 * Displays the status of the profile being viewed under the profile picture.
 	 * 
@@ -145,6 +146,7 @@ public class FacePamphletCanvas extends GCanvas
 		add(statusLabel);
 	}
 
+	
 	/**
 	 * Displays the list of friends the current profile has, given that
 	 * the profiles of all thos friends exist.
