@@ -1,0 +1,41 @@
+Suppose that you want to plot two different types of data in the NameSurfer
+program: baby name popularities (as you're already doing), and surname
+popularities. Suppose you also have a second data file containing the
+popularities of surnames in the United States over time, structured in the same
+way as the baby names file. These questions ask you about the changes you would
+need to make to your program in order to support this.
+
+1. What changes would you make to the interactors in your program to support
+   the two different data sets? Why? Where in the program would you make these
+   changes? You don't need to give any actual code here - just describe the
+   changes at a high level.
+A: I would either include a JCheckbox which specifies the popularity the user wants
+   to plot, or a dropdown box where he can select the popularity he wants to plot,
+   or I would add two JTextFields to type in, as separating the two types will make
+   it easier to program. I would need to make changes in the actionPerformed method
+   in the NameSurfer class. 
+   
+   
+   
+2. What changes would you make to your program in order to store and retrieve
+   information about two different types of data? Where in the program would
+   you make these changes? As before, you don't need to give us actual code
+   here; high-level descriptions suffice.
+   
+A: I would need to have two data structures storing the data in the two files, 
+   and according to which name popularity is selected, I would retrieve the data
+   from the respective file. I would need to make changes in the NameSurferEntry
+   class as well as NameSurferDatabase class to store two types of data. I need
+   to have two variables storing the data in two different data structures.    
+   
+   
+   
+3. What changes, if any, would you make to the NameSurferGraph to differentiate
+   between baby names and surnames? As before, you don't need to give us actual
+   code here; high-level descriptions suffice.
+A: I would make changes according to which TextField is typed in, or which
+   CheckBox is selected or which option is selected in the dropdown box. 
+   I would have two data structures here as well, and I would call them accordingly.
+   One for storing the baby names, and one for storing the surnames.   
+   
+   
